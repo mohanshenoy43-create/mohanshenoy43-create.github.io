@@ -1,0 +1,87 @@
+{
+  "profile": {
+    "name": "Mohan Shenoy",
+    "title": "B.Tech Student",
+    "university": "REVA University",
+    "department": "Computer Science & Engineering",
+    "currentYear": "1st Year",
+    "currentSemester": 2,
+    "admissionYear": 2025,
+    "graduationYear": 2029,
+    "bio": "A passionate B.Tech student at REVA University, currently in Semester 2. I am building a strong foundation in computer science through programming projects, problem-solving practice, and continuous learning.",
+    "avatar": "",
+    "stats": [
+      { "label": "Current Semester", "value": "2nd Sem" },
+      { "label": "Expected CGPA", "value": "N/A" },
+      { "label": "Completed Projects", "value": "2" },
+      { "label": "Achievements Count", "value": "3" }
+    ],
+    "socials": {
+      "github": "https://github.com/mohanshenoy43-create",
+      "linkedin": "https://www.linkedin.com/in/mohan-shenoy-7039aa379/",
+      "hackerrank": "https://www.hackerrank.com/profile/mohan_shenoy43",
+      "email": "mohanshenoy@example.com"
+    }
+  },
+  "achievements": [
+    {
+      "id": "ach-1",
+      "title": "Admitted to REVA University B.Tech CSE",
+      "category": "academic",
+      "semester": 1,
+      "date": "2025-08-01",
+      "description": "Began the B.Tech journey in Computer Science and Engineering at REVA University, Bangalore.",
+      "link": "https://reva.edu.in"
+    },
+    {
+      "id": "ach-2",
+      "title": "Developed 2D Graphics Library in C",
+      "category": "technical",
+      "semester": 1,
+      "date": "2025-11-15",
+      "description": "Designed and coded a simple 2D graphics rendering engine in C programming language for drawing basic shapes and animations.",
+      "link": ""
+    },
+    {
+      "id": "ach-3",
+      "title": "Participated in REVA Hackfest 1.0",
+      "category": "extracurricular",
+      "semester": 1,
+      "date": "2026-02-10",
+      "description": "Collaborated with team members to create a prototype of an educational app in a 24-hour hackathon.",
+      "link": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "2D Graphics Renderer",
+      "description": "A lightweight graphics library written in C that handles matrix operations, color buffers, and outputs 2D visuals.",
+      "tech": ["C", "Algorithms", "2D Graphics"],
+      "link": "https://github.com/mohanshenoy43-create/2D-Graphics-R25EJ077",
+      "semester": 1
+    },
+    {
+      "id": "proj-2",
+      "title": "LeetCode Solutions",
+      "description": "A growing practice collection covering arrays and strings, algorithms, stacks, and linked lists, with progress notes for each problem.",
+      "tech": ["Python", "Algorithms", "Problem Solving"],
+      "link": "https://github.com/mohanshenoy43-create/leetcode-solutions",
+      "semester": 2
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": ["C", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "category": "Developer Tools",
+      "items": ["Git & GitHub", "VS Code", "Windows Terminal"]
+    },
+    {
+      "category": "Core Knowledge",
+      "items": ["Data Structures", "Algorithms", "Linear Algebra", "Object-Oriented Logic"]
+    }
+  ]
+}

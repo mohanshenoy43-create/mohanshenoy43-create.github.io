@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohan Shenoy | Academic & Achievement Portfolio</title>
+  <meta name="description" content="Academic Portfolio of Mohan Shenoy, B.Tech student at REVA University. Tracking academic achievements, technical projects, and skills through 8 semesters.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Blobs for Visual Interest -->
+  <div class="bg-blur-blob blob-1"></div>
+  <div class="bg-blur-blob blob-2"></div>
+  <div class="bg-blur-blob blob-3"></div>
+
+  <!-- Header Navigation -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-accent">&lt;</span>MS<span class="logo-accent"> /&gt;</span>
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#brief" class="nav-link">Brief</a>
+        <a href="#prompt-log" class="nav-link">Prompt Log</a>
+        <a href="#progress" class="nav-link">Timeline</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="admin-toggle-btn" class="btn btn-outline btn-icon" title="Edit Portfolio">
+          <i class="fa-solid fa-gear"></i>
+          <span>Edit Mode</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge hero-badge">
+            <span class="badge-dot"></span> B.Tech CSE @ REVA University
+          </div>
+          <h1 id="hero-name" class="hero-title">Mohan Shenoy</h1>
+          <h2 class="hero-subtitle">B.Tech Student &amp; Developer</h2>
+          <p id="hero-bio" class="hero-description">
+            Loading profile information...
+          </p>
+          <div class="hero-actions">
+            <a href="#progress" class="btn btn-primary">View Timeline</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-stats-panel">
+          <div class="glass-card stats-card-wrapper">
+            <div class="profile-card-header">
+              <div class="profile-avatar">
+                <i class="fa-solid fa-user-astronaut"></i>
+              </div>
+              <div class="profile-meta">
+                <h3 id="profile-meta-name">Mohan Shenoy</h3>
+                <p id="profile-meta-dept">Computer Science &amp; Eng.</p>
+              </div>
+            </div>
+            <hr class="card-divider">
+            <div id="stats-grid" class="stats-grid">
+              <!-- Stats populated by app.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio brief -->
+    <section id="brief" class="section brief-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Portfolio Brief</h2>
+          <p class="section-subtitle">The purpose, audience, content, and design behind this portfolio</p>
+        </div>
+        <div class="grid grid-2 brief-grid">
+          <article class="glass-card brief-card">
+            <h3>Purpose &amp; audience</h3>
+            <p>This portfolio documents my progress as a Computer Science and Engineering student at REVA University. It gives classmates, instructors, mentors, and potential collaborators a clear place to learn about my studies, projects, skills, and ways to connect.</p>
+            <p>Rather than presenting a static résumé, the site follows my eight-semester B.Tech journey. Semester 2 is in progress; earlier work and future semesters are shown in context so that the portfolio can grow alongside my learning.</p>
+          </article>
+          <article class="glass-card brief-card">
+            <h3>Content &amp; experience</h3>
+            <p>The home section introduces me and highlights current progress. The academic timeline, achievement cards, project gallery, and skill groups make the information easy to scan. Contact and profile links connect visitors to my professional and coding profiles.</p>
+            <p>The layout uses a responsive, dark glass-inspired visual theme with clear section navigation. Project cards link directly to their source repositories, including my Hello World program and LeetCode practice collection.</p>
+          </article>
+          <article class="glass-card brief-card">
+            <h3>Implementation &amp; maintenance</h3>
+            <p>The site is built with HTML, CSS, and vanilla JavaScript, with portfolio content stored in <code>portfolio-data.json</code>. This keeps the page lightweight and lets project, achievement, profile, and skill details be updated without a build step.</p>
+            <p>An editor dashboard supports local changes and JSON export. The intended public deployment is GitHub Pages, where the static site can be published from a repository using GitHub's web interface.</p>
+          </article>
+          <article class="glass-card brief-card">
+            <h3>Goals &amp; next steps</h3>
+            <p>The portfolio is designed to be an honest, evolving record rather than a claim of expertise. Its current focus is foundational programming, coursework, and problem-solving practice. As I complete more coursework, I can add verified projects, achievements, and skills to the relevant semester.</p>
+            <p>My next steps are to keep the project links current, expand the record as Semester 2 progresses, and publish the site on GitHub Pages. The prompt log below records the requests and changes available in this conversation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prompt log -->
+    <section id="prompt-log" class="section prompt-log-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Prompt Log</h2>
+          <p class="section-subtitle">Prompts available in this conversation and the resulting changes</p>
+        </div>
+        <ol class="prompt-list">
+          <li class="glass-card prompt-entry">
+            <div class="prompt-meta"><span class="badge">Initial prompt</span></div>
+            <blockquote>“host this website here”</blockquote>
+            <p><strong>What changed:</strong> Started a local web server and opened the portfolio preview.</p>
+          </li>
+          <li class="glass-card prompt-entry">
+            <div class="prompt-meta"><span class="badge">Follow-up prompt</span></div>
+            <blockquote>“Im in 2nd sem rn. make project completed as 2. also include all these things in the website. https://www.hackerrank.com/profile/mohan_shenoy43 https://www.linkedin.com/in/mohan-shenoy-7039aa379/ also do things that are mentioned in the screenshot.”</blockquote>
+            <p><strong>What changed:</strong> Updated the semester and profile links, added a second linked project, and added the portfolio brief, repository links, and this prompt log.</p>
+          </li>
+        </ol>
+        <p class="prompt-log-note">This log reflects the prompts available in this conversation; earlier prompts from before it are not included.</p>
+      </div>
+    </section>
+
+    <!-- Semester Timeline Tracker Section -->
+    <section id="progress" class="section progress-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Academic Journey</h2>
+          <p class="section-subtitle">Semester-wise progression and key milestone logs from Sem 1 to Sem 8</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+          <div id="timeline-steps" class="timeline-steps">
+            <!-- Timeline steps 1-8 populated by app.js -->
+          </div>
+        </div>
+
+        <div class="semester-detail-box glass-card" id="semester-detail-card">
+          <div class="sem-detail-header">
+            <div class="sem-title-group">
+              <span class="badge sem-badge" id="sem-detail-badge">Semester 1</span>
+              <h3 class="sem-detail-title" id="sem-detail-title">Foundation &amp; Core Elements</h3>
+            </div>
+            <div class="sem-period" id="sem-detail-period">Year 1</div>
+          </div>
+          <p class="sem-detail-summary" id="sem-detail-desc">
+            Focus on engineering mathematics, basic computer concepts, and starting programming foundations in C.
+          </p>
+          <div class="sem-stat-row">
+            <div class="sem-sub-stat">
+              <span class="sem-stat-label">Achievements recorded:</span>
+              <span class="sem-stat-value" id="sem-achievements-count">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Achievements &amp; Activities</h2>
+            <p class="section-subtitle">Track record of academic scores, technical breakthroughs, certifications, and extra-curriculars.</p>
+          </div>
+          <!-- Filters -->
+          <div class="filter-group" id="achievement-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="academic">Academic</button>
+            <button class="filter-btn" data-filter="technical">Technical</button>
+            <button class="filter-btn" data-filter="extracurricular">Extracurricular</button>
+          </div>
+        </div>
+
+        <div class="grid grid-3" id="achievements-grid">
+          <!-- Achievements populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Featured Work</h2>
+          <p class="section-subtitle">Practical applications and software projects built during my study</p>
+        </div>
+
+        <div class="project-repo-links" aria-label="Project repositories">
+          <a class="btn btn-secondary" href="https://github.com/mohanshenoy43-create/helloworld" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i> Hello World in C
+          </a>
+          <a class="btn btn-secondary" href="https://github.com/mohanshenoy43-create/leetcode-solutions" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i> LeetCode Solutions
+          </a>
+        </div>
+
+        <div class="grid grid-2" id="projects-grid">
+          <!-- Projects populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Skills &amp; Expertise</h2>
+          <p class="section-subtitle">Core concepts, programming languages, and toolsets mastered</p>
+        </div>
+
+        <div class="grid grid-3" id="skills-grid">
+          <!-- Skills populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="glass-card contact-card">
+          <div class="contact-grid">
+            <div class="contact-info-panel">
+              <h2 class="contact-title">Let's Connect!</h2>
+              <p class="contact-desc">
+                Interested in working together or learning more about my academic progress? Feel free to reach out.
+              </p>
+              
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-icon-wrapper">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h4>Email</h4>
+                    <p id="contact-email">mohanshenoy@example.com</p>
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="contact-icon-wrapper">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <h4>Location</h4>
+                    <p>REVA University Campus, Bangalore, India</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-socials" id="contact-socials">
+                <!-- Social links populated by app.js -->
+              </div>
+            </div>
+
+            <div class="contact-form-panel">
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="form-name">Full Name</label>
+                  <input type="text" id="form-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Email Address</label>
+                  <input type="email" id="form-email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-message">Message</label>
+                  <textarea id="form-message" rows="5" placeholder="Your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-full">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; <span id="footer-year">2026</span> Mohan Shenoy. Built for 8 Semesters of B.Tech.</p>
+      <p class="footer-subtext">REVA University • Computer Science &amp; Engineering</p>
+    </div>
+  </footer>
+
+  <!-- Admin Panel Auth Modal -->
+  <div class="modal-backdrop" id="auth-modal">
+    <div class="glass-card modal-content card-sm">
+      <div class="modal-header">
+        <h3>Developer Access</h3>
+        <button class="modal-close" id="auth-modal-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <p class="modal-text">Enter passcode to toggle Admin Edit Mode. (Hint: default passcode is <strong>reva2025</strong>)</p>
+      <div class="form-group">
+        <label for="admin-passcode">Passcode</label>
+        <input type="password" id="admin-passcode" placeholder="••••••••" class="form-control">
+        <span class="error-msg" id="auth-error-msg">Incorrect passcode. Please try again.</span>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="auth-cancel-btn">Cancel</button>
+        <button class="btn btn-primary" id="auth-submit-btn">Verify</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Panel Dashboard Modal (Main Editor) -->
+  <div class="modal-backdrop" id="admin-modal">
+    <div class="glass-card modal-content card-lg admin-modal-container">
+      <div class="modal-header">
+        <div class="admin-title-group">
+          <h2><i class="fa-solid fa-sliders"></i> Portfolio Editor Dashboard</h2>
+          <span class="admin-mode-indicator">Active Edit Session</span>
+        </div>
+        <button class="modal-close" id="admin-modal-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="admin-layout">
+        <!-- Sidebar Navigation for Editor Sections -->
+        <div class="admin-sidebar">
+          <button class="admin-tab-btn active" data-tab="profile">
+            <i class="fa-solid fa-user-gear"></i> Profile Info
+          </button>
+          <button class="admin-tab-btn" data-tab="achievements">
+            <i class="fa-solid fa-trophy"></i> Achievements
+          </button>
+          <button class="admin-tab-btn" data-tab="projects">
+            <i class="fa-solid fa-folder-open"></i> Projects
+          </button>
+          <button class="admin-tab-btn" data-tab="skills">
+            <i class="fa-solid fa-brain"></i> Skills
+          </button>
+          <button class="admin-tab-btn" data-tab="export">
+            <i class="fa-solid fa-file-export"></i> Sync &amp; Export
+          </button>
+        </div>
+
+        <!-- Scrollable Admin Form Content -->
+        <div class="admin-content-area">
+          <!-- Profile Section -->
+          <div class="admin-tab-content active" id="tab-profile">
+            <h3>Update Profile Information</h3>
+            <form id="admin-profile-form">
+              <div class="grid grid-2 gap-md">
+                <div class="form-group">
+                  <label for="edit-name">Display Name</label>
+                  <input type="text" id="edit-name" required>
+                </div>
+                <div class="form-group">
+                  <label for="edit-title">Title</label>
+                  <input type="text" id="edit-title" required>
+                </div>
+                <div class="form-group">
+                  <label for="edit-university">University</label>
+                  <input type="text" id="edit-university" required>
+                </div>
+                <div class="form-group">
+                  <label for="edit-dept">Department</label>
+                  <input type="text" id="edit-dept" required>
+                </div>
+                <div class="form-group">
+                  <label for="edit-year">Current Year</label>
+                  <select id="edit-year">
+                    <option value="1st Year">1st Year</option>
+                    <option value="2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="4th Year">4th Year</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="edit-semester">Current Semester</label>
+                  <select id="edit-semester">
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group mt-sm">
+                <label for="edit-bio">Short Bio</label>
+                <textarea id="edit-bio" rows="3" required></textarea>
+              </div>
+              <div class="grid grid-3 gap-md mt-sm">
+                <div class="form-group">
+                  <label for="edit-github">GitHub Link</label>
+                  <input type="url" id="edit-github">
+                </div>
+                <div class="form-group">
+                  <label for="edit-linkedin">LinkedIn Link</label>
+                  <input type="url" id="edit-linkedin">
+                </div>
+                <div class="form-group">
+                  <label for="edit-hackerrank">HackerRank Link</label>
+                  <input type="url" id="edit-hackerrank">
+                </div>
+                <div class="form-group">
+                  <label for="edit-email">Email Address</label>
+                  <input type="email" id="edit-email" required>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary mt-md">Save Profile Settings</button>
+            </form>
+          </div>
+
+          <!-- Achievements Section -->
+          <div class="admin-tab-content" id="tab-achievements">
+            <div class="flex-row-between">
+              <h3>Manage Achievements</h3>
+              <button class="btn btn-primary btn-sm" id="btn-show-add-ach">
+                <i class="fa-solid fa-plus"></i> Add New Achievement
+              </button>
+            </div>
+
+            <!-- Add/Edit Achievement Form (hidden by default) -->
+            <form id="ach-form" class="admin-sub-card hidden-form mt-sm">
+              <h4 id="ach-form-title">Add Achievement</h4>
+              <input type="hidden" id="ach-edit-id">
+              
+              <div class="grid grid-3 gap-sm">
+                <div class="form-group">
+                  <label for="ach-input-title">Achievement Title</label>
+                  <input type="text" id="ach-input-title" placeholder="e.g. Cleared Sem 1 with 9.2 SGPA" required>
+                </div>
+                <div class="form-group">
+                  <label for="ach-input-category">Category</label>
+                  <select id="ach-input-category">
+                    <option value="academic">Academic</option>
+                    <option value="technical">Technical</option>
+                    <option value="extracurricular">Extracurricular</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="ach-input-semester">Academic Semester</label>
+                  <select id="ach-input-semester">
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid grid-2 gap-sm mt-sm">
+                <div class="form-group">
+                  <label for="ach-input-date">Date Earned</label>
+                  <input type="date" id="ach-input-date" required>
+                </div>
+                <div class="form-group">
+                  <label for="ach-input-link">Related Link (Optional)</label>
+                  <input type="url" id="ach-input-link" placeholder="https://...">
+                </div>
+              </div>
+
+              <div class="form-group mt-sm">
+                <label for="ach-input-desc">Brief Description</label>
+                <textarea id="ach-input-desc" rows="2" placeholder="Detail the accomplishment, skills gained, or details." required></textarea>
+              </div>
+
+              <div class="form-actions mt-md">
+                <button type="button" class="btn btn-secondary btn-sm" id="btn-cancel-ach">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-sm">Save Achievement</button>
+              </div>
+            </form>
+
+            <div class="list-manager mt-md">
+              <h4>Current Achievement List</h4>
+              <div class="admin-table-container">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th>Semester</th>
+                      <th>Title</th>
+                      <th>Category</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="admin-achievements-list">
+                    <!-- Loaded dynamically -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects Section -->
+          <div class="admin-tab-content" id="tab-projects">
+            <div class="flex-row-between">
+              <h3>Manage Projects</h3>
+              <button class="btn btn-primary btn-sm" id="btn-show-add-proj">
+                <i class="fa-solid fa-plus"></i> Add New Project
+              </button>
+            </div>
+
+            <!-- Add/Edit Project Form -->
+            <form id="proj-form" class="admin-sub-card hidden-form mt-sm">
+              <h4 id="proj-form-title">Add Project</h4>
+              <input type="hidden" id="proj-edit-id">
+
+              <div class="grid grid-3 gap-sm">
+                <div class="form-group">
+                  <label for="proj-input-title">Project Title</label>
+                  <input type="text" id="proj-input-title" placeholder="e.g. 2D graphics engine" required>
+                </div>
+                <div class="form-group">
+                  <label for="proj-input-semester">Academic Semester</label>
+                  <select id="proj-input-semester">
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="proj-input-link">Project Link (GitHub/Live)</label>
+                  <input type="url" id="proj-input-link" placeholder="https://...">
+                </div>
+              </div>
+
+              <div class="form-group mt-sm">
+                <label for="proj-input-tech">Tech Stack (Comma Separated)</label>
+                <input type="text" id="proj-input-tech" placeholder="C, OpenGL, Graphics (comma-separated)" required>
+              </div>
+
+              <div class="form-group mt-sm">
+                <label for="proj-input-desc">Short Description</label>
+                <textarea id="proj-input-desc" rows="2" placeholder="Brief outline of project scope and technology choice." required></textarea>
+              </div>
+
+              <div class="form-actions mt-md">
+                <button type="button" class="btn btn-secondary btn-sm" id="btn-cancel-proj">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-sm">Save Project</button>
+              </div>
+            </form>
+
+            <div class="list-manager mt-md">
+              <h4>Current Project List</h4>
+              <div class="admin-table-container">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th>Sem</th>
+                      <th>Title</th>
+                      <th>Tech Stack</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="admin-projects-list">
+                    <!-- Populated dynamically -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Section -->
+          <div class="admin-tab-content" id="tab-skills">
+            <h3>Manage Skills</h3>
+            <p class="modal-text">Group your technical skills, developer tools, or general computer science concepts.</p>
+            
+            <form id="skill-group-form" class="admin-sub-card mt-sm">
+              <h4>Add Skill to Group</h4>
+              <div class="grid grid-3 gap-sm">
+                <div class="form-group">
+                  <label for="skill-input-group">Skill Category</label>
+                  <select id="skill-input-group">
+                    <!-- Populated dynamically -->
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="skill-input-name">Skill Name</label>
+                  <input type="text" id="skill-input-name" placeholder="e.g. Python, Git, OOP" required>
+                </div>
+                <div class="form-group flex-col-end">
+                  <button type="submit" class="btn btn-primary btn-sm w-full"><i class="fa-solid fa-plus"></i> Add Skill</button>
+                </div>
+              </div>
+            </form>
+
+            <div class="skills-manager-container mt-md" id="admin-skills-list-container">
+              <!-- Render categories with skill badges that have small delete cross icons -->
+            </div>
+          </div>
+
+          <!-- Sync & Export Section -->
+          <div class="admin-tab-content" id="tab-export">
+            <h3>Sync &amp; Export Data</h3>
+            <p class="modal-text">To save your changes permanently in the project source, download the updated data file and replace `portfolio-data.json` inside your workspace directory.</p>
+            
+            <div class="warning-box mb-md">
+              <i class="fa-solid fa-circle-info"></i>
+              <div>
+                <strong>Local Auto-Save Active:</strong> All changes are currently saved in your browser's local cache so you will not lose them on page refresh, but to persist them for deploy, you need to write them to the file.
+              </div>
+            </div>
+
+            <div class="export-actions">
+              <button class="btn btn-primary" id="btn-download-json">
+                <i class="fa-solid fa-download"></i> Download updated portfolio-data.json
+              </button>
+              <button class="btn btn-outline" id="btn-copy-json">
+                <i class="fa-solid fa-copy"></i> Copy JSON to Clipboard
+              </button>
+              <button class="btn btn-danger-outline" id="btn-reset-data">
+                <i class="fa-solid fa-rotate-left"></i> Reset to Code File Defaults
+              </button>
+            </div>
+
+            <div class="json-preview-container mt-md">
+              <label>Current JSON Output Preview</label>
+              <pre class="json-code-preview"><code id="json-preview-area">...</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascript Logic files -->
+  <script src="app.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
